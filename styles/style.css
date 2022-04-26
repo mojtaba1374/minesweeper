@@ -45,7 +45,7 @@ body, html {
 
 .game-board {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     justify-content: center;
     align-content: space-around;
     gap: 0;
@@ -55,14 +55,32 @@ body, html {
 }
 
 .game-board-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     text-align: center;
     background-color: #c6c6c6;
-    border: 2px solid #757575;
-    border-radius: 1px;
+    border: 1px solid #575656;
+    box-shadow: -2px -2px 2px gray;
+    border-radius: 3px;
 }
 
 .game-board-item:hover {
-    background-color: #768181;
+    background-color: #97a8a8;
+}
+
+.game-board-empty-item {
+    background-color: #be9d60;
+}
+
+.reset-color-items {
+    background-color: #91a1a596;
+}
+
+.fa-flag {
+    width: 100%;
+    color: #5f0202;
+    font-size: 40px;
 }
