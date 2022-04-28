@@ -61,6 +61,8 @@ body, html {
     width: 30px;
     height: 30px;
     text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
     background-color: #c6c6c6;
     border: 1px solid #575656;
     box-shadow: -2px -2px 2px gray;
@@ -83,4 +85,36 @@ body, html {
     width: 100%;
     color: #5f0202;
     font-size: 40px;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: purple;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.brown {
+    color: brown;
+}
+
+.black {
+    color: black;
 }
