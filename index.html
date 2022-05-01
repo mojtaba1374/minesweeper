@@ -5,35 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles//style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <script src="./scripts/app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/gamePlay.js" defer type="module"></script>
     <title>MineSweeper</title>
 </head>
 <body>
     <div class="container">
-        <!-- <div class="game-play">
-            <h3>
-                select the level
-            </h3>
-            <button>Easy</button>
-            <button></button>
-            <button>Hard</button>
-        </div> -->
-        <div class="app">
-            <div class="game-header">
-                <div class="mins-number">
-                    <p></p>
-                </div>
-                <div class="retry-game">
-                    <p>retry game</p>
-                </div>
-                <div class="time-passed">
-                    <p>time passed</p>
+        <div class="game-play">
+            <div class="row-bar-container">
+                <h3>
+                    NUMBER ROWS : 
+                    <span>9</span>
+                </h3>
+                <div class="slidecontainer">
+                    <input type="range" min="9" max="30" value="1" class="slider" id="row-range">
                 </div>
             </div>
-            <div class="game-board">
-                
+            <div class="col-bar-container">
+                <h3>
+                    NUMBER COLS :
+                    <span>9</span>
+                </h3>
+                <div class="slidecontainer">
+                    <input type="range" min="9" max="30" value="1" class="slider" id="col-range">
+                </div>
             </div>
+            <div class="min-bar-container">
+                <h3>
+                    NUMBER MINES : 
+                    <span>10</span>
+                </h3>
+                <div class="slidecontainer">
+                    <input type="range" min="10" max="99" value="1" class="slider" id="min-range">
+                </div>
+                <div class="level-min-bar">
+                    <span>easy</span>
+                    <span>hard</span>
+                </div>
+            </div>
+            <button class="start-game-btn">START GAME</button>
         </div>
     </div>
 </body>
