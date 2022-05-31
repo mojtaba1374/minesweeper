@@ -6,7 +6,7 @@ const minesNumber = MNumber;
 let remainMins = minesNumber;
 
 export const runGame = () => {
-    
+
     const boardContainer = document.querySelector('.game-board');
     document.querySelector('.mins-number p').innerHTML = remainMins;
     
@@ -21,6 +21,13 @@ export const runGame = () => {
     
     //  emoji element for winning or lossing the user and function for updated it in UI
     const winStatusEmoji = document.querySelector('.retry-game span');
+
+    // this function for retrt game from zero
+    const retryGameHandler = () => {
+        console.log('retried');
+        location.reload();
+    };
+    winStatusEmoji.addEventListener('click', retryGameHandler);
     
     const updateWinStatusEmoji = (status) => {
         switch (status) {
