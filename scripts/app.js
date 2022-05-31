@@ -22,7 +22,7 @@ export const runGame = () => {
     //  emoji element for winning or lossing the user and function for updated it in UI
     const winStatusEmoji = document.querySelector('.retry-game span');
 
-    // this function for retrt game from zero
+    // this function for restart game from zero
     const retryGameHandler = () => {
         console.log('retried');
         location.reload();
